@@ -4,6 +4,7 @@ import rootReducer   from "./reducers/rootReducer"
 import {createStore} from "redux"
 import {Provider}    from "react-redux";
 import FriendList    from "./components/FriendList";
+import MessagesList from "./components/MessagesList";
 
 
 // import './styles.css'
@@ -15,6 +16,7 @@ function App() {
     <Provider store={store}>
       <div className='App'>
         <FriendList />
+        <MessagesList />
       </div>
     </Provider>
   )
