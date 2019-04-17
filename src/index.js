@@ -1,13 +1,22 @@
-import React    from 'react'
-import ReactDOM from 'react-dom'
+import React         from 'react'
+import ReactDOM      from 'react-dom'
+import rootReducer   from "./reducers/rootReducer"
+import {createStore} from "redux"
+import {Provider}    from "react-redux";
+import FriendList    from "./components/FriendList";
+
 
 // import './styles.css'
 
+const store = createStore(rootReducer)
+
 function App() {
   return (
-    <div className='App'>
-      123
-    </div>
+    <Provider store={store}>
+      <div className='App'>
+        <FriendList />
+      </div>
+    </Provider>
   )
 }
 
