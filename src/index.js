@@ -7,7 +7,7 @@ import FriendList    from "./components/FriendList";
 import MessagesList from "./components/MessagesList";
 
 
-// import './styles.css'
+import './style.css'
 
 const store = createStore(rootReducer)
 

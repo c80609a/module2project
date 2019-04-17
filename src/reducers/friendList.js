@@ -9,7 +9,7 @@ const friendList = (state = initialState, action) => {
       console.log('case ADD_FRIEND:')
       stateCopy = state.slice()
       stateCopy.push({
-        id:   stateCopy.length,
+        id:   action.id,
         name: 'Friend #' + action.id
       })
       return stateCopy

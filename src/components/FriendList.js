@@ -39,6 +39,9 @@ class FriendList extends Component {
 
     return (
       <div className='FriendList'>
+        <div className='controls'>
+          <a href='/' onClick={this.onAddFriend}>Add friend</a>
+        </div>
         <div className='list'>
           {friends.map(
             (friend) => {
@@ -52,9 +55,6 @@ class FriendList extends Component {
               </div>
             }
           )}
-        </div>
-        <div className='controls'>
-          <a href='/' onClick={this.onAddFriend}>Add friend</a>
         </div>
       </div>
     );
