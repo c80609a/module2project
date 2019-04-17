@@ -6,10 +6,12 @@
 * User can view messages list of selected friend
 
 ### State tree
-
+```
   {
     friends:         array of {id, name},
     selectedFriend:  id,
     friendCounter:   number (autoincrement),
     messagesList: object of arrays of strings (key is friend_id)
   }
+```
+
