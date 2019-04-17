@@ -34,8 +34,7 @@ class FriendList extends Component {
   }
 
   render() {
-    console.log('<render>')
-    console.log(JSON.stringify(this.props, null, 2))
+    console.log('<FriendList.render>')
     const { friends, selected } = this.props
 
     return (

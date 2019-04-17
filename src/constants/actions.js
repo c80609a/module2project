@@ -1,3 +1,4 @@
 export const ADD_FRIEND    = 'ADD_FRIEND'
 export const REMOVE_FRIEND = 'REMOVE_FRIEND'
 export const TOGGLE_FRIEND = 'TOGGLE_FRIEND'
+export const SEND_MESSAGE  = 'SEND_MESSAGE'
