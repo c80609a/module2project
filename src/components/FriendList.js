@@ -47,7 +47,7 @@ class FriendList extends Component {
                 <a href='/' onClick={(e) => this.onRemoveFriend(e, friend.id)}>remove</a>
                  |
                 <a href='/' onClick={(e) => this.onToggleFriend(e, friend.id)}>
-                  {selected === friend.id ? 'deselect':'select'}
+                  {selected === friend.id ? 'unselect':'select'}
                 </a>
               </div>
             }
